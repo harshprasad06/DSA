@@ -14,12 +14,10 @@ function push(newElement) {
 function pop() {
   if (currentSize <= 0) {
     console.log("Alert : the Stack is Empty!");
-  }
-  else{
+  } else {
     currentSize--;
-    data.length=currentSize;
+    data.length = currentSize;
   }
-  
 }
 push(5);
 push(45);
@@ -34,7 +32,5 @@ pop();
 pop();
 pop();
 pop();
-
-
 
 console.log(data);
