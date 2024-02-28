@@ -7,7 +7,7 @@ for (let i = 0; i <= data.length; i++) {
     break;
   }
 }
-if(result==undefined){
+if(result==undefined){ 
     console.log("result not found")
 }
 else{
