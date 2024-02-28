@@ -12,7 +12,7 @@ function enqueue(value) {
 }
 
 function dequeue() {
-  if (currentSize > 0) {
+  if (isEmpty()) {
     for (let i = 0; i < queue.length; i++) {
       // const element f= array[i];
       queue[i] = queue[i + 1];
@@ -23,19 +23,34 @@ function dequeue() {
     console.log("queue is empty");
   }
 }
+function front() {
+  if (isEmpty()) {
+    console.log("front", queue[0]);
+  } else {
+    console.log("queue is empty");
+  }
+}
+function rear() {
+  if (isEmpty()) {
+    console.log("rear", queue[currentSize - 1]);
+  } else {
+    console.log("queue is empty");
+  }
+}
+function isEmpty() {
+  if (currentSize > 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
 enqueue(45);
 enqueue(6);
 enqueue(12);
-enqueue(2);
-enqueue(2);
-
-enqueue(2);
-
-dequeue();
-dequeue();
-dequeue();
 dequeue();
 dequeue();
 dequeue();
 
-console.log(queue);
+// console.log(queue);
+front();
+rear();
