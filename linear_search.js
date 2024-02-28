@@ -8,8 +8,8 @@ for (let i = 0; i <= data.length; i++) {
   }
 }
 if(result==undefined){
-    console.log("result not found",result)
+    console.log("result not found")
 }
 else{
-    console.log("result")
+    console.log("result",result)
 }
